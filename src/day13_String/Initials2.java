@@ -8,10 +8,22 @@ public class Initials2 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter a word");
-        String word = input.nextLine();
+        System.out.println("Enter first name");
+        String firstName = input.nextLine();
+
+        System.out.println("Enter last name");
+        String lastName = input.nextLine();
 
         input.close();
+
+        firstName=""+firstName.toUpperCase().charAt(0);
+        lastName=""+lastName.toUpperCase().charAt(0);
+
+        System.out.println(firstName+"."+lastName);
+
+
+
+
 
         // harflerin arasinda nokta olucak ve buyuk harfe donmeli
 
