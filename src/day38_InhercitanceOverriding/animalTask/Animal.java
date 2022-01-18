@@ -6,6 +6,7 @@ public class Animal {
     public int age;
     public char gender;
 
+
     public Animal(String name, String breed, String size, String color, int age, char gender){
         this.name=name;
         this.breed=breed;
