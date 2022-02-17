@@ -1,4 +1,4 @@
-package day17_NestedLoop;
+package day18_NestedLoop;
 
 public class PrintStarsTriangle {
 

@@ -6,7 +6,8 @@ public class CarsArrayTask {
 
     public static void main(String[] args) {
 
-        Car[] cars ={ new Toyota("Highlander", 2010, 25000, "White", 255000),
+        Car[] cars ={
+                new Toyota("Highlander", 2010, 25000, "White", 255000),
                 new BMW("X5", 2014, 32000, "Red", 12000),
                 new Toyota("Corolla", 2011, 20000, "White", 310000),
                 new BMW("M3", 2015, 33000, "Blue", 14030),
@@ -20,10 +21,11 @@ public class CarsArrayTask {
                 new Tesla("Model 3", 2015, 45000, "White", 235000),
                 new Tesla("Model Y", 2017, 65000, "Black", 135000),
                 new Tesla("Model X", 2016, 48000, "White", 235000),
-                new Tesla("Model X", 2014, 48000, "White", 236000),};
+                new Tesla("Model X", 2014, 48000, "White", 236000)
+        };
 
         Car CarHasHighestMiles = cars[0];
-        Car CarHasLowestMiles = cars[0];
+        Car CarHasLowestMiles =  cars[3];
 
         for (Car each : cars) {
 

@@ -17,13 +17,15 @@ public class DivisionWithoutOperator {
         input.close();
 
 
-
         int result=0;
 
         while(x>y){
+
             x=x-y;
             result++;
+
         }
+
 
         int remainder=x;
 
