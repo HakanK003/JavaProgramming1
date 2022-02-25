@@ -17,14 +17,13 @@ public class AnagramChecker {
 
     public static boolean isAnagram (String str1, String str2){
 
-        boolean a =false;
         char[] ch1 = str1.toCharArray();
         char[] ch2 = str2.toCharArray();
 
-        Arrays.sort(ch1); Arrays.sort(ch2);
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
 
-        if (Arrays.equals(ch1, ch2)){a=true;}
-        return a;
+        return Arrays.equals(ch1, ch2);
     }
 }
 

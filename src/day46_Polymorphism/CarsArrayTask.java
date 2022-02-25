@@ -6,7 +6,7 @@ public class CarsArrayTask {
 
     public static void main(String[] args) {
 
-        Car[] cars ={
+        Car[] carsArray ={
                 new Toyota("Highlander", 2010, 25000, "White", 255000),
                 new BMW("X5", 2014, 32000, "Red", 12000),
                 new Toyota("Corolla", 2011, 20000, "White", 310000),
@@ -24,10 +24,10 @@ public class CarsArrayTask {
                 new Tesla("Model X", 2014, 48000, "White", 236000)
         };
 
-        Car CarHasHighestMiles = cars[0];
-        Car CarHasLowestMiles =  cars[3];
+        Car CarHasHighestMiles = carsArray[0];
+        Car CarHasLowestMiles =  carsArray[3];
 
-        for (Car each : cars) {
+        for (Car each : carsArray) {
 
             if(each instanceof Tesla && (each.getYear()==2015 || each.getYear()==2016) ){
                 System.out.println("This car can be recalled "+each);

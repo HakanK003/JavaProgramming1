@@ -1,8 +1,24 @@
 package day43_Abstraction.carTask;
 
+import java.util.ArrayList;
+
 public class CarShop {
 
     public static void main(String[] args) {
+
+        Toyota car1 = new Toyota("Highlander", 2010, 25000, "White", 255000);
+
+        Car car2 = new Toyota("Corolla", 2011, 20000, "White", 310000);
+
+        Car car3 = new Tesla("Model Y", 2017, 65000, "Black", 135000);
+
+        ArrayList<Car> carList = new ArrayList<>();
+
+        carList.add(car2);
+        carList.add(car3);
+
+        System.out.println(carList);
+
 
         //Toyota honda1 = new Toyota("Accord", 2019, "Black", 30000);
 

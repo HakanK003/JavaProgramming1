@@ -25,7 +25,9 @@ public class ConsecutiveNumbers {
                 if (i%5==0) {
                     System.out.print("Coders");
                 }
+
                 System.out.println();
+
             }else{
                 System.out.println(i);
             }
