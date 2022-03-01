@@ -13,7 +13,7 @@ public class ReverseNegativeNumber {
     }
 
     public static int returnPositive(int a){
-        return -a;
+        return (a>=0)? a : -a ;
     }
 
 }

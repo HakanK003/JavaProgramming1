@@ -1,5 +1,7 @@
 package zzzWeaklyTasks.week3;
 
+import java.util.ArrayList;
+
 public class ArmstrongNumber {
 
     public static void main(String[] args) {
@@ -16,7 +18,51 @@ public class ArmstrongNumber {
 
     public static boolean isArmstrong(int a){
 
-        int result = 0;
+        ArrayList<Integer> digits = new ArrayList<>();
+
+        int num = a;
+        int result =0;
+        int i =0;
+
+        while(a>=1){
+
+            i++;
+
+            int digit=a%10;
+
+            a = a/10;
+
+            digits.add(digit);
+
+        }
+
+
+
+        for (Integer each : digits) {
+
+            int temp=1;
+
+            for (int j = 0; j < i; j++) {
+                temp *= each;
+            }
+
+            result = result + temp;
+
+        }
+
+      return num==result;
+    }
+
+
+}
+
+/*
+Write a method that can check if a number is Armstrong or not
+ */
+
+/*
+
+  int result = 0;
 
         int b = a;
 
@@ -49,11 +95,5 @@ public class ArmstrongNumber {
         }
 
     return c==result;
-    }
 
-
-}
-
-/*
-Write a method that can check if a number is Armstrong or not
  */
