@@ -24,6 +24,23 @@ public class SameLetters {
 
         System.out.println( containsSameLetters(str5, str6) );
 
+
+//        String str1 = "Hello There";
+//        String str2 = "Hello There";
+//
+//        System.out.println( containsSameLetters2(str1, str2) );
+//
+//        String str3 = "Hello There";
+//        String str4 = "Hello Ther";
+//
+//        System.out.println( containsSameLetters2(str3, str4) );
+//
+//        String str5 = "abc";
+//        String str6 = "cab";
+//
+//        System.out.println( containsSameLetters2(str5, str6) );
+
+
     }
 
     public static boolean containsSameLetters(String str1, String str2){
@@ -39,24 +56,30 @@ public class SameLetters {
 
     }
 
-//
-//    public static boolean containsSameLetters2(String str1, String str2){
-//
-//        String[] str1Letters = str1.split("");
-//        String[] str2Letters = str2.split("");
-//
-//        for (String each1 : str1Letters) {
-//
-//            for (String each2 : str2Letters) {
-//
-//                if (each1.equals(each2)){}
-//
-//            }
-//
-//        }
-//
-//        return ;
-//    }
+
+    public static boolean containsSameLetters2(String str1, String str2){
+
+        String[] str1Letters = str1.split("");
+        String[] str2Letters = str2.split("");
+
+        for (int i =0; i<str1Letters.length; i++) {
+
+            for (int j =0; j<str2Letters.length; j++) {
+
+                if (str1Letters[i].equals(str2Letters[j])){
+
+                    str1Letters[i]=null;
+                    str2Letters[j]=null;
+                    break;
+
+                }
+
+            }
+
+        }
+
+        return Arrays.equals(str1Letters, str2Letters);
+    }
 
 }
 
