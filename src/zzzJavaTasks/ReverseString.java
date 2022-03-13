@@ -1,6 +1,6 @@
-package utility.zzzJavaTasks;
+package zzzJavaTasks;
 
-public abstract class ReverseString {
+public class ReverseString {
 
     public static void main(String[] args) {
 
