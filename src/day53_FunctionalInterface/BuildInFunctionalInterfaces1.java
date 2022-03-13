@@ -22,6 +22,13 @@ public class BuildInFunctionalInterfaces1 {
 
         Predicate<Integer> isEven = p -> p % 2 == 0;
 
+        Predicate<Integer> isEven2 = (p) -> {
+
+             boolean isEven3 = p % 2 == 0;
+
+             return isEven3;
+        };
+
         System.out.println("--------------------------------------");
 
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 1, 2, 3));

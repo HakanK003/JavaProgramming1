@@ -6,14 +6,33 @@ public class ArmstrongNumber {
 
     public static void main(String[] args) {
 
-        System.out.println(isArmstrong(153)); // (1*1*1)+(5*5*5)+(3*3*3) = 153
+        System.out.println("153 "+isArmstrong(153)); // (1*1*1)+(5*5*5)+(3*3*3) = 153
                                                  //    1   +  125  +   27  =   153  true
 
-        System.out.println(isArmstrong(3));   //  3*1   =  3
+        System.out.println("3 "+isArmstrong(3));   //  3   =  3
                                                 //    3    =  3       true
 
-        System.out.println(isArmstrong(23)); //  (2*2) + (3*3) != 23  false
+        System.out.println("23 "+isArmstrong(23)); //  (2*2) + (3*3) != 23  false
                                                 //    4 +   9   = 13
+
+        System.out.println("1634 "+isArmstrong(1634));
+
+
+        System.out.println("6 "+isArmstrong(6));
+
+
+        System.out.println("222 "+isArmstrong(222));
+
+
+        System.out.println("371 "+isArmstrong(371));
+
+
+        System.out.println("9474 "+isArmstrong(9474));
+
+
+        System.out.println("2222 "+isArmstrong(2222));
+
+
     }
 
     public static boolean isArmstrong(int a){
@@ -22,11 +41,9 @@ public class ArmstrongNumber {
 
         int num = a;
         int result =0;
-        int i =0;
 
         while(a>=1){
 
-            i++;
 
             int digit=a%10;
 
@@ -42,7 +59,7 @@ public class ArmstrongNumber {
 
             int temp=1;
 
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < digits.size(); j++) {
                 temp *= each;
             }
 

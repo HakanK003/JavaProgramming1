@@ -1,5 +1,6 @@
 package zzzWeaklyTasks.week4;
 
+import javax.print.attribute.standard.PresentationDirection;
 import java.util.*;
 
 public class FrequencyOfCharacters {
@@ -12,6 +13,9 @@ public class FrequencyOfCharacters {
 
 
         frequencyOfChars2(str);
+
+
+        frequencyOfChars3(str);
 
 
 
@@ -65,6 +69,49 @@ public class FrequencyOfCharacters {
         }
 
         System.out.println(str);
+
+    }
+
+
+    public static void frequencyOfChars3(String str){
+
+        String[] letters = str.split("");
+
+        String result = "";
+
+        for (int i = 0; i < letters.length; i++){
+
+
+            String currentLetter = letters[i];
+
+            if ( !result.contains( currentLetter ) ){
+
+
+                result+=currentLetter;
+
+
+                int count = 0;
+
+
+                for (int j = 0; j < letters.length; j++){
+
+
+
+                    if (currentLetter.equals( letters[j] )){
+
+                        count++;
+
+                    }
+
+                }
+
+                result+=count;
+
+            }
+
+        }
+
+        System.out.println("result = "+ result);
 
     }
 
