@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class SortLettersAndNumbers {
 
-    public static void main(String[] args) throws IndexOutOfBoundsException{
+    public static void main(String[] args){
 
 
         String str1 ="DC501GCCCA098911";
