@@ -55,6 +55,8 @@ public class PasswordValidation {
         return  rule1&&rule2&&rule3&&rule4&&rule5 ;
     }
 
+    // try to do it with one line of each in lambda version
+
 }
 
 /*
