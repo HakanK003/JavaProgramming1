@@ -8,6 +8,8 @@ public class SortAscending {
 
         System.out.println(Arrays.toString(sortAscending(new int[]{1, 3, 4, 9, 7, 5, 2, 8, 4, 6, 0})));
 
+        System.out.println(Arrays.toString(sortAscending2(new int[]{1, 3, 4, 9, 7, 5, 2, 8, 4, 6, 0})));
+
     }
 
     public static int[] sortAscending(int[] nums){
@@ -43,6 +45,34 @@ public class SortAscending {
         return sorted;
 
     }
+
+
+
+        public static int[] sortAscending2(int[] numbers){
+
+        int temp;
+
+        for (int i = 0; i <numbers.length; i++) {
+
+
+            for (int j = 0; j <numbers.length; j++) {
+
+                if (numbers[i]<numbers[j]){
+
+                    temp=numbers[i];
+                    numbers[i]=numbers[j];
+                    numbers[j]=temp;
+
+                }
+
+            }
+
+
+        }
+
+        return numbers;
+    }
+
 
 }
 
